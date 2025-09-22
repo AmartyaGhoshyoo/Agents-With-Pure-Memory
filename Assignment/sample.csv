@@ -1,0 +1,20 @@
+import pandas as pd
+from sklearn.datasets import load_iris
+
+# Load iris dataset
+iris = load_iris(as_frame=True)
+
+# Convert to DataFrame
+df = iris.frame
+
+# Display the first few rows
+print("First 5 rows of the DataFrame:")
+print(df.head())
+
+# Check data types of each column
+print("\nData Types:")
+print(df.dtypes)
+
+# Get summary statistics
+print("\nSummary Statistics:")
+print(df.describe(include="all"))
